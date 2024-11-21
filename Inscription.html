@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        
+        <li><a href="Accueil.html">Missions militaires</a></li>
+        <li> <a href="Inscription.html">Inscription/Réclamation</a></li>
+        <li> <a href="Equipement.html">Les équipements militaires</a></li>
+</ul>
+  <header><h1>
+    Formulaire d'inscription ou Réclamation
+  </h1></header>  
+  <form method="post" enctype="application/x-www-form-urlencoded" >
+    <label for ="name "> Nom: </label>
+    <input type="text" name="name" id="name"  required>
+    <br>
+    <br>
+    <label for ="Prénom "> Prénom: </label>
+    <input type="text" name="Prénom" id="Prénom"  required>
+    <br>
+    <br>
+    <label for="grade">Grade :</label>
+            <select id="grade" name="grade">
+        <option value="soldat">Soldat</option>
+        <option value="Sous officier">Sous Officier</option>
+        <option value="officier">Officier</option>
+
+    </select>
+    <br>
+    <br>
+    <label for ="email "> MAIL: </label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+    <label for="text">Message:</label><br>
+    <textarea name="text" id="text"></textarea><br><br>
+    <label for="choisirFichier">Joindre un fichier :</label>
+    <input type="file" id="choisirFichier" name="fichier" accept=".jpg, .jpeg, .png"> <br><br>
+    <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>
